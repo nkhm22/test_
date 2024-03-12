@@ -11,7 +11,7 @@ def text_handler(message):
     text = message.text.lower()
     chat_id = message.chat.id
     len_txt = len(text)
-    vowels = set("aeiouуеэоаыяиюё")
+    vowels = set("aeiouyуеэоаыяиюё")
     for letter in text:
         if letter in vowels:
             count += 1
